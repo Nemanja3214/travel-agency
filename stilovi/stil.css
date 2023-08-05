@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel img {
+  height: 400px;
+}
+
+nav {
+  background-color: #2b7a78;
+}
+
+nav .navbar-brand {
+  color: #feffff;
+}
+
+nav .nav-link {
+  color: #feffff;
+}
+
+nav .nav-link:hover {
+  color: #3aafa9;
+}
+
+nav i {
+  color: #feffff;
+}
+
+nav span {
+  padding: 5px;
+}
+
+.glavno1 {
+  background-color: #3aafa9;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.glavno1 h1 {
+  color: #def2f1;
+  border-bottom: 1px solid #def2f1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.glavno1 .card {
+  margin: 30px;
+  padding: 10px;
+}
+
+.glavno1 .card a {
+  color: #2b7a78;
+}
+
+.glavno1 .card img {
+  height: 170px;
+}
+
+footer {
+  background-color: #17252a;
+  padding: 20px 10px;
+  color: white;
+}
+
+footer #ikonice {
+  text-align: center;
+  display: inline-block;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #2b7a78;
+}
+
+footer i {
+  margin: 15px;
+}
+
+#harmonika {
+  padding-bottom: 50px;
+}
+
+#harmonika button {
+  text-decoration: none;
+  color: #2b7a78;
+}
+
+fieldset {
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+  background-color: aliceblue;
+}
+
+#prijavaModal .modal-body {
+  background-color: aliceblue;
+}
+
+legend {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button[type="submit"],
+#izmenaTureDugme,
+#izmenaKorisnikaDugme {
+  background-color: #2b7a78;
+}
+
+button[type="submit"]:hover,
+#izmenaTureDugme:hover,
+#izmenaKorisnikaDugme:hover {
+  background-color: #3aafa9;
+}
+
+.horizontalneKartice, .horizontalneKarticeNeparno {
+  padding: 30px;
+  color: #def2f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.horizontalneKartice > div, .horizontalneKarticeNeparno > div {
+  position: relative;
+}
+
+.horizontalneKartice > div a, .horizontalneKarticeNeparno > div a {
+  color: #def2f1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.horizontalneKartice > div a:hover, .horizontalneKarticeNeparno > div a:hover {
+  color: #2b7a78;
+}
+
+.horizontalneKarticeNeparno {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.maksimalnaVelicina {
+  height: 100%;
+  width: 100%;
+}
+
+#profilniPodaciKontejner {
+  margin: 50px 10px;
+  padding: 50px;
+  border: 2px inset #17252a;
+  border-radius: 21px;
+  background-color: aliceblue;
+}
+
+#profilniPodaciKontejner h1 {
+  color: black;
+  border-bottom: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#profilniPodaciKontejner img {
+  margin-bottom: 50px;
+}
+
+.dugmeCelija {
+  text-align: center;
+}
+
+#administratorskiNaslov {
+  color: #2b7a78;
+  border-bottom: 1px solid #2b7a78;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#tabelaSaKorisnicima > table thead {
+  background-color: #2b7a78;
+}
+
+#tabelaSaKorisnicima > table td:nth-child(8) > a {
+  color: black;
+}
+
+#slikaTure {
+  height: 450px;
+}
+
+#turaNaslov {
+  color: #3aafa9;
+  border-bottom: 1px solid #3aafa9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#slikaTureKontejner {
+  background-color: #3aafa9;
+  padding: 60px 10px;
+}
+
+#podaciTure {
+  background-color: #2b7a78;
+  padding: 15px;
+  color: #def2f1;
+}
+
+#podaciTure th,
+#podaciTure td {
+  vertical-align: middle;
+}
+
+aside > div {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  #slikaTureKontejner {
+    padding: 0;
+  }
+}
+
+.cekirano {
+  color: orange;
+}
+
+.progress {
+  padding: 0;
+}
+
+#cetiriZvezdicaProgres > div > div > div {
+  background-color: #4287f5;
+}
+
+#triZvezdicaProgres > div > div > div {
+  background-color: #3edced;
+}
+
+#dveZvezdicaProgres > div > div > div {
+  background-color: orange;
+}
+
+#ocene {
+  padding: 20px;
+  border: 7px groove rgba(140, 164, 152, 0.39);
+  margin: 90px 0;
+}
+
+#ocene span {
+  display: inline-block;
+}
+
+.zvezdiceProgres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deaktivirano {
+  background-color: #CDCDCD;
+}
+
+.preporucenoKontejner {
+  border: 6px solid rgba(28, 110, 164, 0.56);
+  padding: 15px;
+  color: #def2f1;
+}
+
+.preporucenoKontejner img {
+  height: 220px;
+}
+
+.preporucenoKontejner h4 {
+  color: #def2f1;
+  border-bottom: 1px solid #def2f1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.preporucenoKontejner p {
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-align: justify;
+}
+
+.preporucenoKontejner i {
+  color: #def2f1;
+}
+
+.preporucenoKontejner i:hover {
+  color: #2b7a78;
+}
+
+.preporucenoKontejner .cenaAtrakcije {
+  color: #def2f1;
+}
+
+.preporucenoKontejner .col-lg-6 {
+  padding-top: 20px;
+}
+
+#tureKartice p {
+  text-align: justify;
+}
+
+#donjaPreporuka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#detaljanOpisTure > p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .cenaAtrakcije {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cenaAtrakcije {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav li {
+    border-radius: 20%;
+  }
+  .table-responsive {
+    display: table;
+  }
+}
+/*# sourceMappingURL=stil.css.map */

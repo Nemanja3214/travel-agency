@@ -1,0 +1,314 @@
+@import "./promenljive";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.carousel {
+    img {
+        height: 400px;
+    }
+}
+
+nav {
+    background-color: $tematskaBoja2;
+    .navbar-brand {
+        color: $tematskaBoja5;
+    }
+    .nav-link {
+        color: $tematskaBoja5;
+        &:hover {
+            color: $tematskaBoja1;
+        }
+    }
+    i {
+        color: $tematskaBoja5;
+    }
+    span {
+        padding: 5px;
+    }
+}
+
+@mixin podvucenNaslov($bojaTeksta, $ivicnaBoja) {
+    color: $bojaTeksta;
+    border-bottom: 1px solid $ivicnaBoja;
+    width: fit-content;
+}
+
+.glavno1 {
+    background-color: $tematskaBoja1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    h1 {
+        @include podvucenNaslov($tematskaBoja4, $tematskaBoja4);
+    }
+    .card {
+        margin: 30px;
+        padding: 10px;
+        a {
+            color: $tematskaBoja2
+        }
+        img {
+            height: 170px;
+        }
+    }
+}
+
+footer {
+    background-color: $tematskaBoja3;
+    padding: 20px 10px;
+    #ikonice {
+        text-align: center;
+        display: inline-block;
+    }
+    color: white;
+    a {
+        color: white;
+        &:hover {
+            color: $tematskaBoja2;
+        }
+    }
+    i {
+        margin: 15px;
+    }
+}
+
+#harmonika {
+    button {
+        text-decoration: none;
+        color: $tematskaBoja2;
+    }
+    padding-bottom: 50px;
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid hsl(0, 0%, 75%);
+    background-color: $formaPozadina;
+}
+
+#prijavaModal .modal-body {
+    background-color: $formaPozadina;
+}
+
+legend {
+    width: fit-content;
+}
+
+button[type="submit"],
+#izmenaTureDugme,
+#izmenaKorisnikaDugme {
+    background-color: $tematskaBoja2;
+    &:hover {
+        background-color: $tematskaBoja1;
+    }
+}
+
+.horizontalneKartice {
+    padding: 30px;
+    color: $tematskaBoja4;
+    display: flex;
+    flex-direction: row;
+    >div {
+        position: relative;
+        a {
+            color: $tematskaBoja4;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            &:hover {
+                color: $tematskaBoja2;
+            }
+        }
+    }
+}
+
+.horizontalneKarticeNeparno {
+    @extend .horizontalneKartice;
+    flex-direction: row-reverse;
+}
+
+.maksimalnaVelicina {
+    height: 100%;
+    width: 100%;
+}
+
+#profilniPodaciKontejner {
+    margin: 50px 10px;
+    padding: 50px;
+    border: 2px inset $tematskaBoja3;
+    border-radius: 21px;
+    background-color: $formaPozadina;
+    h1 {
+        @include podvucenNaslov(black, black);
+    }
+    img {
+        margin-bottom: 50px;
+    }
+}
+
+.dugmeCelija {
+    text-align: center;
+}
+
+#administratorskiNaslov {
+    @include podvucenNaslov($tematskaBoja2, $tematskaBoja2);
+}
+
+#tabelaSaKorisnicima>table {
+    thead {
+        background-color: $tematskaBoja2;
+    }
+    td:nth-child(8)>a {
+        color: black;
+    }
+}
+
+#slikaTure {
+    height: 450px;
+}
+
+#turaNaslov {
+    @include podvucenNaslov($tematskaBoja1, $tematskaBoja1);
+}
+
+#slikaTureKontejner {
+    background-color: $tematskaBoja1;
+    padding: 60px 10px;
+}
+
+#podaciTure {
+    background-color: $tematskaBoja2;
+    padding: 15px;
+    color: $tematskaBoja4;
+    th,
+    td {
+        vertical-align: middle;
+    }
+}
+
+aside>div {
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #slikaTureKontejner {
+        padding: 0;
+    }
+}
+
+.cekirano {
+    color: orange;
+}
+
+.progress {
+    padding: 0;
+}
+
+#cetiriZvezdicaProgres>div>div>div {
+    background-color: $progresbar4;
+}
+
+#triZvezdicaProgres>div>div>div {
+    background-color: $progresbar3;
+}
+
+#dveZvezdicaProgres>div>div>div {
+    background-color: $progresbar2;
+}
+
+#ocene {
+    padding: 20px;
+    border: 7px groove rgba(140, 164, 152, 0.39);
+    margin: 90px 0;
+    span {
+        display: inline-block;
+    }
+}
+
+@mixin flexPoravnanje($pozicija) {
+    display: flex;
+    align-items: $pozicija;
+}
+
+.zvezdiceProgres {
+    @include flexPoravnanje(center);
+}
+
+.deaktivirano {
+    background-color: #CDCDCD;
+}
+
+.preporucenoKontejner {
+    border: 6px solid rgba(28, 110, 164, 0.56);
+    padding: 15px;
+    img {
+        height: 220px;
+    }
+    $bojaTekstaPreporuke:$tematskaBoja4;
+    h4 {
+        @include podvucenNaslov($bojaTekstaPreporuke, $bojaTekstaPreporuke);
+    }
+    color: $bojaTekstaPreporuke;
+    p {
+        font-size: 18px;
+        font-family: 'Helvetica';
+        text-align: justify;
+    }
+    i {
+        color: $bojaTekstaPreporuke;
+        &:hover {
+            color: $tematskaBoja2;
+        }
+    }
+    .cenaAtrakcije {
+        color: $bojaTekstaPreporuke;
+    }
+    .col-lg-6 {
+        padding-top: 20px;
+    }
+}
+
+#tureKartice {
+    p {
+        text-align: justify;
+    }
+}
+
+#donjaPreporuka {
+    @include flexPoravnanje(center);
+}
+
+#detaljanOpisTure>p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .cenaAtrakcije {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .cenaAtrakcije {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    nav {
+        li {
+            border-radius: 20%;
+        }
+    }
+    .table-responsive {
+        display: table;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}

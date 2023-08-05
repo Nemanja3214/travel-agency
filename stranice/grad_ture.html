@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibile" content="ie-edge">
+    <title>Turisticke ture</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../stilovi/stil.css" type="text/css">
+    <link rel="icon" href="../slike/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- navigacioni bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a href="../index.html" class="navbar-brand">
+            <img src="../slike/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Promeni navigaciju">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item">
+                    <a href="../stranice/profilna.html" class="nav-link">Profilna strana</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="administratorska.html" class="nav-link">Administratorska stranica</a>
+                </li>
+                <li class="nav-item">
+                    <a href="preporuke.html" class="nav-link">Preporuke</a>
+                </li>
+            </ul>
+            <a href="#" class="nav-link pl-0" data-toggle="modal" data-target="#registracijaModal">Registracija</a>
+            <a href="#" class="nav-link pl-0" data-toggle="modal" data-target="#prijavaModal">Prijava</a>
+        </div>
+    </nav>
+    <!-- modali -->
+    <!-- registracija -->
+    <div class="modal fade" id="registracijaModal" tabindex="-1" role="dialog" aria-describedby="naslovRegistracionogModala" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center" id="naslovRegistracionogModala">Registracija</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori" id="zatvaranjeDugmeRegistracija">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <fieldset>
+                            <legend>Login podaci</legend>
+                            <div class="form-group">
+                                <label for="korisnickoImeKorisnikaRegistracija">Korisničko ime:</label>
+                                <input type="text" class="form-control" name="korisnickoImeKorisnikaRegistracija" id="korisnickoImeKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="lozinkaKorisnikaRegistracija">Lozinka:</label>
+                                <input type="password" class="form-control" name="lozinkaKorisnikaRegistracija" id="lozinkaKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailKorisnikaRegistracija">Email:</label>
+                                <input type="email" class="form-control" name="emailKorisnikaRegistracija" id="emailKorisnikaRegistracija">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Lični podaci</legend>
+                            <div class="form-group">
+                                <label for="imeKorisnikaRegistracija" class="control-label">Ime:</label>
+                                <input type="text" class="form-control" name="imeKorisnikaRegistracija" id="imeKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="prezimeKorisnikaRegistracija">Prezime:</label>
+                                <input type="text" class="form-control" name="prezimeKorisnikaRegistracija" id="prezimeKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="datumRodjenjaKorisnikaRegistracija">Datum rodjenja:</label>
+                                <input type="date" class="form-control" name="datumRodjenjaKorisnikaRegistracija" id="datumRodjenjaKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="adresaKorisnikaRegistracija">Adresa:</label>
+                                <input type="text" class="form-control" name="adresaKorisnikaRegistracija" id="adresaKorisnikaRegistracija">
+                            </div>
+                            <div class="form-group">
+                                <label for="brojTelefonaKorisnikaRegistracija">Broj telefona:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            +381
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" name="brojTelefonaKorisnikaRegistracija" id="brojTelefonaKorisnikaRegistracija">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="slikaKorisnikaFajlRegistracija">Profilna slika: </label>
+                                <input type="file" class="form-control-file" name="slikaKorisnikaFajlRegistracija" id="slikaKorisnikaFajlRegistracija">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary float-right m-2" id="registracijaDugme">Prosledi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- prijava -->
+    <div class="modal fade" id="prijavaModal" tabindex="-1" role="dialog" aria-describedby="naslovPrijavnogModala" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center" id="naslovPrijavnogModala">Prijava</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori" id="zatvaranjeDugmePrijava">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="korisnickoImeKorisnikaPrijava">Korisničko ime:</label>
+                            <input type="text" class="form-control" name="korisnickoImeKorisnikaPrijava" id="korisnickoImeKorisnikaPrijava">
+                        </div>
+                        <div class="form-group">
+                            <label for="lozinkaKorisnikaPrijava">Lozinka:</label>
+                            <input type="password" class="form-control" name="lozinkaKorisnikaPrijava" id="lozinkaKorisnikaPrijava">
+                        </div>
+                        <a href="#">Zaboravili ste lozinku?</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary float-right m-2" id="prijavaDugme">Prosledi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- kartice -->
+        <main class="glavno1" id="tureKartice">
+            <h1>Ture u ponudi</h1>
+            <!-- dinamicki sadrzaj -->
+        </main>
+        <!-- futer -->
+        <footer class="text-center">
+            <div class="row d-flex justify-content-center" id="ikonice">
+                <a href="#">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google-plus fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Pere Perića 38</p>
+                    <p>21000 Novi Sad</p>
+                    <p>+381 064 1111111</p>
+                    <p>turisticka@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89812.3680903019!2d5.936938779367741!3d45.295566596549236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a4ff6c0ab4fb7%3A0x408ab2ae4be6560!2zMzg1NzAgVGhleXMsINCk0YDQsNC90YbRg9GB0LrQsA!5e0!3m2!1ssr!2srs!4v1619258446047!5m2!1ssr!2srs"
+                        allowfullscreen="" loading="lazy"></iframe> -->
+                </div>
+            </div>
+            <p id="copyright">©Copyright 2020</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/korisne_funkcije.js"></script>
+    <script src="../js/login_registracija.js"></script>
+    <script src="../js/grad_ture.js"></script>
+</body>
+
+</html>
